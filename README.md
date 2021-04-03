@@ -2,9 +2,9 @@
 
 ![A Sentence.png](https://i.loli.net/2021/04/03/wcAqTkuQ89Khf2e.png)
 
-随便写的一个 “一句话” 展示站
+随便写的一个 “一句话” 系统
 
-展示站点 ： [http://lan.lt5d.cn/ASentence](http://lan.lt5d.cn/ASentence)
+演示站点 ： [http://lan.lt5d.cn/ASentence](http://lan.lt5d.cn/ASentence)
 
 ## 特性
 
