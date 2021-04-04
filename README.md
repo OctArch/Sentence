@@ -4,7 +4,7 @@
 
 随便写的一个 “一句话” 系统
 
-演示站点 ： [http://lan.lt5d.cn/ASentence](http://lan.lt5d.cn/ASentence)
+演示站点 ： 暂无
 
 ## 特性
 
@@ -32,8 +32,6 @@
 如果您觉得这个软件对您很有帮助，欢迎通过赞助来支持开发！
 
 目前可在 [爱发电](https://afdian.net/@ImJingLan) 上赞助。
-
-
 
 ## 问题报告
 
