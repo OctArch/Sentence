@@ -1,6 +1,7 @@
 <?php
 $code =$_POST['code'];
 $passwd =$_POST['passwd'];
+$newpasswd = $_POST['newpasswd'];
 
 include '../config/database.php';
 

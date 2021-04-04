@@ -12,8 +12,15 @@ username VARCHAR(30) NOT NULL,
 passwd VARCHAR(45) NOT NULL,
 usergroup VARCHAR(30)
 )";
+
+$sql3 = "INSERT INTO ".$sqlsentence." (author, froma, text)
+VALUES ('A Sentence','A Sentence','Welcome To A Sentence')";
+
+        
+
         mysqli_query($con,$sql1);
         mysqli_query($con,$sql2);
+        mysqli_query($con, $sql3);
         if (mysqli_query($con,$sql1) && mysqli_query($con,$sql2)) {
             $com=1;
         } else {

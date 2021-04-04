@@ -5,13 +5,6 @@ $textsql = $dbprefix.'sentence';
 $con = mysqli_connect($dbhost,$dbuser,$dbpasswd,$dbname);
 
 $sql = "SELECT * FROM ".$textsql;
- /*
-if (mysqli_query($con, $sql)) {
-    echo "删除成功";
-        echo '<meta http-equiv="refresh" content = "2;url=./delete.php">';
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($con);
-}*/
 
 $result = mysqli_query($con, $sql);
 
@@ -28,7 +21,6 @@ if (mysqli_num_rows($result) > 0) {
 {
     echo "";
 }
-
 
 mysqli_close($con);
 

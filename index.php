@@ -8,15 +8,15 @@
 			<?php
 			if($sitename!='')
 			echo $sitename ;
-			else echo 'A Sentence | 一话';
+			else echo 'A Sentence | 一句';
 			?>
 		</title>
-		<link rel="icon" href="./favicon.png">
+		<link rel="icon" href="./icons/favicon.png">
 		<meta name="description" content=
 		<?php
 		    if($describe != '' )
 		        echo "\"".$describe."\"";
-		    else echo "\"一话，一句话，感动人心\""
+		    else echo "\"一句 | 一句话，感动人心\""
 		 ?>
 		    
 		>
@@ -36,7 +36,7 @@
 							<?php
 			if($sitename!='')
 			echo $sitename ;
-			else echo 'A Sentence | 一话';
+			else echo 'A Sentence | 一句';
 			?>
 						</span>
 					<div class="links">
@@ -45,7 +45,7 @@
 				</header>
 				<main class="home">
 					<header class="hero">
-						<img src="logo.png">
+						<img src="./icons/logo.png">
 						<h1 id="main-title">
 						<script src="./api/?encode=js"></script><script>AMessage();</script>
 						</h1>
@@ -53,7 +53,7 @@
 							<?php
 		    if($describe != '' )
 		        echo $describe;
-		    else echo "\"一话，一句话，感动人心\""
+		    else echo "\"一句话，感动人心\""
 		 ?>
 						</p>
 						<p class="action">
@@ -75,7 +75,7 @@
 						</p>
 					</header>
 					<div class="footer">
-						Copyright © 2020 <?php echo $sitename ?> | Powered By <a href="">A Sentence
+						Copyright © 2020 <?php echo $sitename ?> | Powered By <a href="https://github.com/imjinglan/sentence">A Sentence
 					</div>
 				</main>
 			</div>

@@ -390,7 +390,7 @@
                     <div class="mdui-textfield mdui-textfield-not-empty mdui-textfield-has-bottom">
                         <label class="mdui-textfield-label">表前缀</label>
                         <input class="mdui-textfield-input" name="dbprefix" value="ast_" autocomplete="off">
-                        <div class="mdui-textfield-helper">如果您希望在同一个数据库安装多个A Sentence, 请修改前缀</div>
+                        <div class="mdui-textfield-helper">如果您希望在同一个数据库安装多个A Sentence | 一句, 请修改前缀</div>
                     </div>
                 </div>
             </div>
@@ -400,7 +400,7 @@
                 
                     <div class="mdui-textfield">
                         <label class="mdui-textfield-label">站点名称</label>
-                        <input class="mdui-textfield-input" name="sitetitle" value="A Sentence"/>
+                        <input class="mdui-textfield-input" name="sitetitle" value="A Sentence | 一句"/>
                     </div>
                     
                     <div class="mdui-textfield">

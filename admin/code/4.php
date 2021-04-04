@@ -3,7 +3,7 @@ $title=$_POST['title'];
 $describe=$_POST['describe'];
 $tg=$_POST['tg'];
 $keywords=$_POST['keywords'];
-
+$con = mysqli_connect($dbhost, $dbuser, $dbpasswd, $dbname);
 $CONFIGfile = fopen("../config/siteinfo.php", "w");
         $txt = (
             "<?php\n"
@@ -15,4 +15,18 @@ $CONFIGfile = fopen("../config/siteinfo.php", "w");
         fwrite($CONFIGfile, $txt);
         fclose($CONFIGfile);
 
+if($newpasswd!='')
+    {
+        $newpasswdsha1 = sha1($newpasswd);
+        
+        $passwdsha1 = sha1($passwd);
+        
+        $sqluser =$dbprefix."user";
+        
+        $sql = "UPDATE ".$sqluser." SET passwd='".$newpasswdsha1."' 
+        WHERE passwd='".$passwdsha1."'";
+        mysqli_query($con, $sql);
+    }
+    echo "更新成功";
+        echo '<meta http-equiv="refresh" content = "2;url=./">';
 ?>
