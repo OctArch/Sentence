@@ -39,7 +39,7 @@
 
 ## 版本选择
 
-一般情况下，我会在[Releases](https://github.com/ImJingLan/Sentence/releases/)中放出**测试可用的正式版本**
+一般情况下，我会在[Releases](https://github.com/ImJingLan/Sentence/releases/latest/)中放出**测试可用的正式版本**
 
 我不保证仓库中的源代码Clone后可正常使用，也不会处理关于仓库中源码的Issues
 
