@@ -2,7 +2,7 @@
 
 ![A Sentence.png](https://i.loli.net/2021/04/03/wcAqTkuQ89Khf2e.png)
 
-随便写的一个 “一句话” 系统
+随便写的一个 “一句话” 管理、展示系统
 
 演示站点 ： [http://lan.azoid.cn/ASentence](http://lan.azoid.cn/ASentence)
 
@@ -21,11 +21,16 @@
 
 - 一台主机，Nginx 或 Apache
 - PHP >= 7.3.0
+- MySQL >= 5.6
 - 安装并启用如下 PHP 扩展：
   - OpenSSL
   - PDO
   - MySqli
-  - MySQL
+  - 
+
+## 待解决BUG
+
+- [ ] 自动安装界面跳转无法检测子文件夹
 
 ## 支持并赞助 A Sentence
 
@@ -50,4 +55,3 @@ MIT License
 Copyright (c) 2021-present ImJingLan
 
 程序原作者为 [@imjinglan](https://github.com/ImJingLan)，转载请注明。
-
