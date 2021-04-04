@@ -7,7 +7,7 @@ $textsql = $dbprefix.'sentence';
 
 $con = mysqli_connect($dbhost,$dbuser,$dbpasswd,$dbname);
 
-$sql = "INSERT INTO ".$textsql." (author,speaker,text)
+$sql = "INSERT INTO ".$textsql." (author,froma,text)
 VALUES (\"".$author."\", \"".$speaker."\", \"".$text."\")";
  
 if (mysqli_query($con, $sql)) {

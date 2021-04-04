@@ -16,7 +16,7 @@ $result = mysqli_query($con, $sql);
  
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
-        if( $row["username"]=='root'&& $row["passwd"]==sha1($passwd))
+        if($row["passwd"]==sha1($passwd))
         {
             mysqli_close($con);
             $url = './code/'.$code . '.php';

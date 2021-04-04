@@ -11,7 +11,7 @@
 			else echo 'A Sentence | 一话';
 			?>
 		</title>
-		<link rel="icon" href="./icons/favicon.png">
+		<link rel="icon" href="./favicon.png">
 		<meta name="description" content=
 		<?php
 		    if($describe != '' )
@@ -20,6 +20,7 @@
 		 ?>
 		    
 		>
+		<meta name="keywords" content="<?php echo $keyword ?>">
 		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -39,11 +40,12 @@
 			?>
 						</span>
 					<div class="links">
+					    
 					</div>
 				</header>
 				<main class="home">
 					<header class="hero">
-						<img src="./icons/logo.png">
+						<img src="logo.png">
 						<h1 id="main-title">
 						<script src="./api/?encode=js"></script><script>AMessage();</script>
 						</h1>
@@ -60,16 +62,20 @@
 							    echo $tg;
 							?>"
 							     class="nav-link action-button">
-								点我投稿
+								我要投稿
 							</a>
-							<a href="./api.html"
+							<a href="./api?encode=help"
 							     class="nav-link action-button">
 								开放接口
+							</a>
+							<a href="./admin"
+							     class="nav-link action-button">
+								管理面板
 							</a>
 						</p>
 					</header>
 					<div class="footer">
-						Copyright © 2020 <?php echo $sitename ?> | Powered By <a href="https://github.com/imjinglan/sentence" target="_blank">A Sentence</a>
+						Copyright © 2020 <?php echo $sitename ?> | Powered By <a href="">A Sentence
 					</div>
 				</main>
 			</div>

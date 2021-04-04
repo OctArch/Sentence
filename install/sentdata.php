@@ -2,8 +2,8 @@
 $sql1 = "CREATE TABLE ".$sqlsentence." (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 author VARCHAR(30) NOT NULL,
-speaker VARCHAR(30) NOT NULL,
-text VARCHAR(65530),
+froma VARCHAR(30) NOT NULL,
+text VARCHAR(21775),
 reg_date TIMESTAMP
 )";
         $sql2 = "CREATE TABLE ".$sqluser." (
@@ -12,14 +12,13 @@ username VARCHAR(30) NOT NULL,
 passwd VARCHAR(45) NOT NULL,
 usergroup VARCHAR(30)
 )";
-
+        mysqli_query($con,$sql1);
+        mysqli_query($con,$sql2);
         if (mysqli_query($con,$sql1) && mysqli_query($con,$sql2)) {
             $com=1;
         } else {
             echo "创建数据表错误: " . $con->error;
         }
- 
-        $con->close();
         
         mkdir("../config/");
         
