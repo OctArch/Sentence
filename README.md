@@ -4,7 +4,7 @@
 
 随便写的一个 “一句话” 系统
 
-演示站点 ： 暂无
+演示站点 ： [http://lan.azoid.cn/ASentence]
 
 ## 特性
 
