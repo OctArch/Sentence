@@ -34,7 +34,7 @@
 						&#xe88a;
 					</i>
 					<div class="mdui-list-item-content">
-						首页
+						站点信息
 					</div>
 				</a>
 				<a href="./insert.php" class="mdui-list-item mdui-list-item-active mdui-ripple">
@@ -75,7 +75,7 @@
     			
     			<div class="mdui-textfield mdui-textfield-floating-label">
                   <label class="mdui-textfield-label">投稿者</label>
-                  <input class="mdui-textfield-input" value="游客" name="author"/>
+                  <input class="mdui-textfield-input" value="游客" name="creator"/>
                 </div>
                 
                 <div class="mdui-textfield mdui-textfield-floating-label">
@@ -85,7 +85,7 @@
                 
                 <div class="mdui-textfield mdui-textfield-floating-label">
                   <label class="mdui-textfield-label">作者</label>
-                  <input class="mdui-textfield-input" value="佚名" name="speaker"/>
+                  <input class="mdui-textfield-input" value="佚名" name="author"/>
                 </div>
                 
                 <div class="mdui-textfield mdui-textfield-floating-label">

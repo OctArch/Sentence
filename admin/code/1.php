@@ -1,14 +1,14 @@
 <?php
 $author=$_POST['author'];
 $text=$_POST['text'];
-$speaker=$_POST['speaker'];
+$creator=$_POST['creator'];
 
 $textsql = $dbprefix.'sentence';
 
 $con = mysqli_connect($dbhost,$dbuser,$dbpasswd,$dbname);
 
-$sql = "INSERT INTO ".$textsql." (author,froma,text)
-VALUES (\"".$author."\", \"".$speaker."\", \"".$text."\")";
+$sql = "INSERT INTO ".$textsql." (creator,author,text)
+VALUES (\"".$creator."\", \"".$author."\", \"".$text."\")";
  
 if (mysqli_query($con, $sql)) {
     echo "添加成功";

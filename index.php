@@ -45,7 +45,7 @@
 				</header>
 				<main class="home">
 					<header class="hero">
-						<img src="./icons/logo.png">
+						<img src="./icons/logo.png?v=1.0">
 						<h1 id="main-title">
 						<script src="./api/?encode=js"></script><script>AMessage();</script>
 						</h1>

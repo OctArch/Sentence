@@ -18,7 +18,11 @@ if(!file_exists('./config/database.php') || !file_exists('../config/siteinfo.php
     
     $encode = $_GET["encode"];
     
-    if($encode!="json"&& $encode!="text" && $encode!="js" && $encode!="help")
+    if($encode == '')$encode='json';
+    
+    $apifile = './encodes/'.$encode.'.php';
+    
+    if(!file_exists($apifile))
     $encode='json';
     
     $conn = mysqli_connect($dbhost, $dbname, $dbpasswd , $dbname);
@@ -32,15 +36,7 @@ if(!file_exists('./config/database.php') || !file_exists('../config/siteinfo.php
     $a = mysqli_select_db($conn,$sentencedatabase);
     
     $result = mysqli_query($conn,"SELECT * FROM ".$sentencedatabase." order by rand() limit 1");
-    if($encode=="json")
-        include "json.php";
-    if($encode=="text")
-        include "text.php";
-    if($encode=="js")
-        include "js.php";
-    
-    if($encode == 'help')
-        include 'help.php';
+    include $apifile;
     
     mysqli_close($conn);
 

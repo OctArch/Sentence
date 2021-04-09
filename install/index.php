@@ -440,7 +440,7 @@
                 <div class="mdui-typo-headline">恭喜你完成安装</div>
                 <div class="mdui-typo">
                     <p>现在，你可以前往 <a href="'.$url.'">'.$url.'</a> 访问网站首页</p>
-                    <p>更多信息请查看网页根目录 <strong>./config/siteinfo.php</strong> 进行更改 ， UI搭建中....</p>
+                    <p>更多信息请查看网页管理员目录 <strong>./config/siteinfo.php</strong> 进行更改</p>
                 </div>
             </div>
             ');

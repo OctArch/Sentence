@@ -34,7 +34,7 @@
 						&#xe88a;
 					</i>
 					<div class="mdui-list-item-content">
-						首页
+						站点信息
 					</div>
 				</a>
 				<a href="./insert.php" class="mdui-list-item mdui-ripple">
