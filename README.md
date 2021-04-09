@@ -26,7 +26,6 @@
   - OpenSSL
   - PDO
   - MySqli
-  - 
 
 ## 待解决BUG
 
