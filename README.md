@@ -4,7 +4,7 @@
 
 随便写的一个 “一句话” 管理、展示系统
 
-演示站点 ： [http://lan.azoid.cn/ASentence](http://lan.azoid.cn/ASentence)
+演示站点 ： [https://1Sentence.cn](https://1Sentence.cn)
 
 ## 特性
 
