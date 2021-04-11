@@ -1,6 +1,6 @@
+<?php include 'check.php' ?>
 <?php
 $code =$_POST['code'];
-$passwd =$_POST['passwd'];
 $newpasswd = $_POST['newpasswd'];
 
 include '../config/database.php';
@@ -17,13 +17,9 @@ $result = mysqli_query($con, $sql);
  
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
-        if($row["passwd"]==sha1($passwd))
-        {
             mysqli_close($con);
             $url = './code/'.$code . '.php';
             include $url;
-        }
-        else {mysqli_close($con); echo 'Access denied';echo '<meta http-equiv="refresh" content = "1;url=./">';}
     }
 }
  

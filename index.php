@@ -68,7 +68,7 @@
 							     class="nav-link action-button">
 								开放接口
 							</a>
-							<a href="./admin"
+							<a href="./login.php"
 							     class="nav-link action-button">
 								管理面板
 							</a>

@@ -1,3 +1,9 @@
+<?php
+include 'check.php' ;
+
+$code=$_GET['complete'];
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -61,12 +67,26 @@
 						列表
 					</div>
 				</a>
+				<a href="./code/5.php" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">
+						&#xe0b8;
+					</i>
+					<div class="mdui-list-item-content">
+						登出
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="mdui-container mdui-typo">
 			<h1 class="mdui-text-color-theme">
 				添加语句
 			</h1>
+			<?php
+			    if($code)
+			    {
+			        echo("<script>mdui.alert('语句添加成功', '添加成功');</script>");
+			    }
+			?>
 			<form class="content database" action="data.php" method="post">
     			<div class="mdui-textfield mdui-textfield-floating-label" style ="display:none">
                   <label class="mdui-textfield-label"></label>
@@ -86,11 +106,6 @@
                 <div class="mdui-textfield mdui-textfield-floating-label">
                   <label class="mdui-textfield-label">作者</label>
                   <input class="mdui-textfield-input" value="佚名" name="author"/>
-                </div>
-                
-                <div class="mdui-textfield mdui-textfield-floating-label">
-                  <label class="mdui-textfield-label">管理密码</label>
-                  <input class="mdui-textfield-input" value="" name="passwd"/>
                 </div>
                 
     			<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">添加</button>

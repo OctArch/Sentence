@@ -11,8 +11,7 @@ $sql = "INSERT INTO ".$textsql." (creator,author,text)
 VALUES (\"".$creator."\", \"".$author."\", \"".$text."\")";
  
 if (mysqli_query($con, $sql)) {
-    echo "添加成功";
-        echo '<meta http-equiv="refresh" content = "2;url=./insert.php">';
+    header('Location: ./insert.php?complete=1');
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
 }

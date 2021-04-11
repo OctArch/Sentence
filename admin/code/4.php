@@ -27,6 +27,5 @@ if($newpasswd!='')
         WHERE passwd='".$passwdsha1."'";
         mysqli_query($con, $sql);
     }
-    echo "更新成功";
-        echo '<meta http-equiv="refresh" content = "2;url=./">';
+    header('Location: ./?complete=1');
 ?>
