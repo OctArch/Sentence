@@ -1,10 +1,10 @@
 # A Sentence | 一句
 
-![A Sentence.png](https://i.loli.net/2021/04/03/wcAqTkuQ89Khf2e.png)
+![A Sentence.png](https://i.loli.net/2021/04/09/yIRhCvK2Ub1TcV7.png)
 
 随便写的一个 “一句话” 管理、展示系统
 
-演示站点 ： [http://lan.azoid.cn/ASentence](http://lan.azoid.cn/ASentence)
+演示站点 ： [https://1Sentence.cn](https://1Sentence.cn)
 
 ## 特性
 
@@ -12,8 +12,8 @@
 - 支持前端添加语句
 - 完全开源
 - 易于使用
-  - 可视化的用户、角色、材质管理页面
   - 详细的站点配置页面
+  - 简单的语句管理页面
 
 ## 环境要求
 
@@ -26,11 +26,10 @@
   - OpenSSL
   - PDO
   - MySqli
-  - 
 
 ## 待解决BUG
 
-- [ ] 自动安装界面跳转无法检测子文件夹
+- [x] 自动安装界面跳转无法检测子文件夹 FIXED DATE:2021/04/09
 
 ## 支持并赞助 A Sentence
 
