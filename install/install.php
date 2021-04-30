@@ -106,7 +106,7 @@ header("Location: ./?code=complete");
 ?>');
 fwrite($CONFIGfile, $txt);
         fclose($CONFIGfile);
-
+        file_get_contents("https://api.lite.cafe/stats?type=asentence");
         $url ="Location: ./userdata.php?username=".$adminname."&&passwd=".$adminpasswd;
         
         if($com=1)
