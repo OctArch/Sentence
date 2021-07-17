@@ -1,3 +1,5 @@
+> 本仓库已过时，最新程序请访问https://github.com/ImJingLan/dictum
+
 # A Sentence | 一句
 
 ![A Sentence.png](https://i.loli.net/2021/04/09/yIRhCvK2Ub1TcV7.png)
